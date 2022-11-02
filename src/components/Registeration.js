@@ -41,31 +41,31 @@ function Registration(args) {
           <h4 className=" text-center">Create Your Account </h4>
           
           <form className="" >
-              <div className=" col-mb-5 mx-3">
-                <label htmlFor="email"className="form-label fw-semibold">Email Id/ User Name</label>
-                <div className = "input-group with-icon icon-shy">
-                <input type="email" className="form-control mt-1" id="exampleInputEmail1" placeholder="eg:test@test.com "
+              <div className=" col-mb-5 mx-3 mt-1">
+                <label htmlFor="email"className="form-label fw-semibold ">Email Id/ User Name</label>
+                {/* <div className = "input-group with-icon icon-shy"> */}
+                <input type="email" className="form-control " id="exampleInputEmail1" placeholder="eg:test@test.com "
                   aria-describedby="emailHelp" name="email" value={loginFormData.email}   />
-                 <i className="fa-solid fa-user"></i>
+                 {/* <i className="fa-solid fa-user"></i>
 
-                  </div>
+                  </div> */}
               </div>
               < div className=" col-mb-5 mx-3">
-                <label htmlFor=""className="form-label fw-semibold"> Name</label>
+                <label htmlFor=""className="form-label fw-semibold "> Name</label>
                 <div className = "input-group with-icon icon-shy">
-                <input type="text" className="form-control " id="" placeholder="eg:jhon "></input>  
+                <input type="text" className="form-control " id="exampleInput" placeholder="eg:jhon "></input>  
                 <i className="fa-regular fa-user"></i>  
                 </div>
               </div>
 
-              < div className=" col-mb-5 mx-3 ">
-                <label htmlFor=""className="form-label fw-semibold">Mobile No</label>
-                <input type="" className="form-control mt-1" id="number" placeholder="eg:jhon "/>
+              <div className=" col-mb-5 mx-3 ">
+                <label htmlFor=""className="form-label fw-semibold ">Mobile No</label>
+                <input type="" className="form-control " id="exampleInputnumber" placeholder="eg:jhon "/>
                 <i className="fa-regular fa-eye"></i>
               </div>
 
               <div className="col-mb-5 mx-3">
-                <label htmlFor="password"className="form-label fw-semibold  mt-1">Password</label>
+                <label htmlFor="password"className="form-label fw-semibold">Password</label>
                 <div className = "input-group with-icon icon-shy">
                 <input type="password" className="form-control" id="exampleInputPassword1"placeholder="**********"
                   name="password" value={loginFormData.password}/>
@@ -73,7 +73,7 @@ function Registration(args) {
                   </div>
               </div>
               <div className="col-mb-5 mx-3">
-                <label htmlFor="password"className="form-label fw-semibold  mt-1">Confirm Password</label>
+                <label htmlFor="password"className="form-label fw-semibold">Confirm Password</label>
                 <input type="password" className="form-control" id="exampleInputPassword1"placeholder="**********"
                   name="password" value={loginFormData.password}/>
               </div>
@@ -81,7 +81,7 @@ function Registration(args) {
               <div>
               <p>
              <input type= "checkbox"></input>
-             <span className="text mx-1 mt-2 space" >Agree to all</span><span className="login space">terms and conditons</span>
+             <span className="text mx-2 mt-4 space" >Agree to all</span><span className="login space">terms and conditons</span>
              </p>
              </div>
              
@@ -89,7 +89,7 @@ function Registration(args) {
             <div className="">
              <button type="button " className="rounded-pill d-grid gap-2 col-6 mx-auto  red" data-bs-target="toggle" onClick={toggle}>Register Now</button>
             </div>
-            <p className="text-center text mt-2" > I am already a Member? <span className = " color: #ED7633; login">Login</span>  </p>
+            <p className="text-center text " > I am already a Member? <span className = " color: #ED7633; login">Login</span>  </p>
              <p className="text-center text" >© Erasmus Training Services Pvt. Ltd.2022</p>     
       </div>
       <div>
